@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run: git fetch --prune --unshallow
+      - run: git fetch --prune --unshallow && git submodule update --init
       - name: Setup Environments
         id: envs
         run: |
