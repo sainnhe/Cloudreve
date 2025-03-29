@@ -17,7 +17,7 @@ jobs:
         id: envs
         run: |
           CLOUDREVE_LATEST_TAG=$(git describe --tags --abbrev=0)
-          DOCKER_IMAGE="cloudreve/cloudreve"
+          DOCKER_IMAGE="sainnhe/cloudreve"
 
           echo "RELEASE_VERSION=${GITHUB_REF#refs}"
           TAGS="${DOCKER_IMAGE}:latest,${DOCKER_IMAGE}:${CLOUDREVE_LATEST_TAG}"
